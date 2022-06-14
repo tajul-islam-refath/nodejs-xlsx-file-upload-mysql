@@ -1,0 +1,27 @@
+    // rows.forEach((row) => {
+    //   console.log(row);
+    //   let selectQuery = "SELECT * FROM `students` WHERE name=?";
+    //   connection.query(selectQuery, row[0], (error, response) => {
+    //     if (error) {
+    //       console.log(error);
+    //     } else {
+    //       if (response.length !== 0) {
+    //         let updateQuery = "UPDATE `students` SET ? WHERE name=? ";
+    //         connection.query(
+    //           updateQuery,
+    //           [[row], row[0]],
+
+    //           (error, response) => {
+    //             console.log(error || response);
+    //           }
+    //         );
+    //       } else {
+    //         let insertQuery =
+    //           "INSERT INTO students (name, email, university, father_name, mother_name, address, gander, age, mobile, date) VALUES ? ";
+    //         connection.query(insertQuery, [[row]], (error, response) => {
+    //           console.log(error || response);
+    //         });
+    //       }
+    //     }
+    //   });
+    // });
